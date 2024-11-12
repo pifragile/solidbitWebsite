@@ -70,10 +70,10 @@ function ContactForm() {
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$1K – $10K" name="budget" value="1" />
-                <RadioInput label="$10K – $25K" name="budget" value="10" />
-                <RadioInput label="$25K – $100K" name="budget" value="25" />
-                <RadioInput label="More than $100K" name="budget" value="150" />
+                <RadioInput label="$5K – $20K" name="budget" value="5" />
+                <RadioInput label="$20K – $50K" name="budget" value="20" />
+                <RadioInput label="$50K – $100K" name="budget" value="50" />
+                <RadioInput label="More than $100K" name="budget" value="100" />
               </div>
             </fieldset>
           </div>

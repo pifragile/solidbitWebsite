@@ -9,14 +9,14 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
+import logoAvolut from '@/images/clients/avolut.png'
+import logoEncointer from '@/images/clients/encointerOnBlack.png'
+import logoWeb3foundation from '@/images/clients/web3foundation.png'
+import logoEditart from '@/images/clients/editart.jpg'
+import logoSaintz from '@/images/clients/saintz.png'
+import logoStellars from '@/images/clients/stellars.png'
+import logoMetaCollector from '@/images/clients/metacollector.jpg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -92,14 +92,13 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Avolut', logoAvolut],
+  ['Encointer', logoEncointer],
+  ['Web3 Foundation', logoWeb3foundation],
+  ['EditArt', logoEditart],
+  ['SAINTZ', logoSaintz],
+  ['StellarsDAO', logoStellars],
+  ['Metacollector', logoMetaCollector],
 ]
 
 function Clients() {

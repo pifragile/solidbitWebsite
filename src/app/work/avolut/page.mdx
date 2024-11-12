@@ -1,0 +1,64 @@
+import logo from '@/images/clients/avolut.png'
+import quoteWhite from '@/images/quoteWhite.png'
+import imageHero from './hero.png'
+import imageDebraFiscal from './debra-fiscal.jpg'
+
+export const caseStudy = {
+  client: 'Avolut',
+  title: 'Building efficient software serving 600k+ customers.',
+  description:
+    "Avolut is the software agency powering the backend system of Chicorée Mode AG, one of Switzerland's largest fashion retailers.",
+  summary: [
+    "Avolut is the software agency powering the backend system of Chicorée Mode AG, one of Switzerland's largest fashion retailers.",
+    'I am working closely with the Avolut core team to bring efficient new features to production and optimize the current archtitecture, like for instance decreasing the time used to send notificactions to all customers from 6hrs to under 1.5hrs.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2024-09',
+  service: 'Backend Development, Architecture',
+  testimonial: {
+    author: { name: 'Florian Türler', role: 'Technical Director of Avolut' },
+    content:
+      'Piero places great importance on working precisely and neatly. With this commitment, he has inspired and strongly influenced the team\'s working methods. For Piero, it was always a given to take on responsibility in all his tasks. He consistently worked very reliably and with a high degree of independence. We were always very satisfied with his work performance.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Avolut powers the backend system of Chicorée Mode AG, one of Switzerland's largest fashion retailers. They have more than 600k active customers on their system and process transaction worth multiple millions per day.
+
+This requires software that is reliable as well as flexible in order to account for the fast changing requirements of a dynamic business.
+
+I help Avolut achieving those goals by putting a lot of effort in the inital design and architecture of newly implemented features in order to provide simple and esailiy maintanable code as well as preventing technical debt early on.
+
+As an example, I refactored the notification system by using an optimized queuing setup as well as infrastructure autoscaling of email rendering as well as message processing workers, reducing the time required to notify all custmers from 6hrs to under 1.5 hrs.
+## What we did
+
+<TagList>
+  <TagListItem>Backend (Python/Django/Postgres)</TagListItem>
+  <TagListItem>Infrastructure (AWS)</TagListItem>
+  <TagListItem>Queuing System (Celery/Amazon SQS)</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Florian Türler', role: 'Technical Director of Avolut' }}
+  image={{ src: quoteWhite }}
+>
+  Piero places great importance on working precisely and neatly. With
+  this commitment, he has inspired and strongly influenced the team's working
+  methods. For Piero, it was always a given to take on responsibility in all his
+  tasks. He consistently worked very reliably and with a high degree of
+  independence. We were always very satisfied with his work performance.
+</Blockquote>
+
+{/* <StatList>
+  <StatListItem value="25%" label="Less traffic" />
+  <StatListItem value="10x" label="Page load times" />
+  <StatListItem value="15%" label="Higher infra costs" />
+  <StatListItem value="$1.2M" label="Legal fees" />
+</StatList> */}

@@ -1,0 +1,62 @@
+import logo from '@/images/clients/encointerOnBlack.png'
+import imageHero from './hero.png'
+import imageEmilySelman from './emily-selman.jpg'
+import quoteWhite from '@/images/quoteWhite.png'
+
+export const caseStudy = {
+  client: 'Encointer',
+  title: 'Scaling blockchain applications',
+  description:
+    'Encointer is a platform that provides Proof-Of-Personhood technology on the Polkadot blockchain.',
+  summary: [
+    'Encointer is a platform that provides Proof-Of-Personhood technology on the Polkadot blockchain.',
+    'We built large parts of the Encointer protocol including the scaling of all core algorithms to be able to process large numbers of transactions and implementing an on-chain democracy module.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Blockchain development',
+  testimonial: {
+    author: { name: 'Alain Brenzikofer', role: 'Founder of Encointer' },
+    content:
+      'Piero reliably delivered well thought out software designs as well as efficient and robust implementations which form a substantial part of Encointer\'s core protocol.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Encointer is a platform that provides Proof-Of-Personhood technology on the Polkadot blockchain.
+
+I was helping Encointer to build and enhance their core protocol for more than 2 years, scaling their core algorithms to linear asymptotic complexities that are viable to be executed on-chain.
+
+As the delivered code needs to reliably run on a blockchain, I put a lot of effort in writing thorough unit- and integration tests in order to guarantee maximum robustness of the code.
+
+Also I developed an on-chain democracy module from scratch and built several off-chain webapps like an indexer for Polkadot parachains or an accounting app for Encointer communities.
+
+## What we did
+
+<TagList>
+  <TagListItem>Blockchain development</TagListItem>
+  <TagListItem>Substrate Development (Rust)</TagListItem>
+  <TagListItem>Algorithm Scaling</TagListItem>
+  <TagListItem>Software Architecture</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Alain Brenzikofer', role: 'Founder of Encointer' }}
+  image={{ src: quoteWhite }}
+>
+Piero reliably delivered well thought out software designs as well as efficient and robust implementations which form a substantial part of Encointer's core protocol.
+</Blockquote>
+
+{/* <StatList>
+  <StatListItem value="34%" label="Fewer transactions" />
+  <StatListItem value="10%" label="Slower transactions" />
+  <StatListItem value="1000ms" label="Transaction latency" />
+  <StatListItem value="3" label="Active nodes" />
+</StatList> */}

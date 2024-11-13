@@ -142,13 +142,12 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
+        eyebrow="My work"
         title="Proven solutions for real-world problems."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          I believe in the value of well thought out software designs and simple
+          and efficient implementations in order to ship fast and provide robust, maintanable software at a good price.
         </p>
       </PageIntro>
 

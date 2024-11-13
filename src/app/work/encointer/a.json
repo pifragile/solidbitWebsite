@@ -1,0 +1,21 @@
+{
+    "title": "My Exhibition",
+    "date": "2019-01-01",
+    "whateverField": "whateverValuie",
+    "artwroks": [
+        {
+            "contract": "<CONTRACT_ADDRESS>",
+            "tokenId": "TOKEN_ID"
+        },
+        {
+            "contract": "<CONTRACT_ADDRESS>",
+            "tokenId": "TOKEN_ID"
+        }
+    ],
+    "exhibitionImages": [
+        {
+            "ipfsHash": "<HASH>",
+            "description": "blabla"
+        }
+    ]
+}

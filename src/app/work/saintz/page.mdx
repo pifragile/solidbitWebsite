@@ -1,0 +1,61 @@
+import logo from '@/images/clients/saintz.png'
+import imageHero from './hero.png'
+import imageJennyWilson from './jenny-wilson.jpg'
+import quoteWhite from '@/images/quoteWhite.png'
+
+export const caseStudy = {
+  client: 'Saintz',
+  title: 'State of the art Web3 development',
+  description:
+    'Saintz is a patreon like subscription management platform on the Tezos blockchain.',
+  summary: [
+    'Saintz is a patreon like subscription management platform on the Tezos blockchain.',
+    'I took over this project in an unfinished, quite desolate state after the previous developer had to unexpecteldy leave the project.',
+    'After taking inventory, I completely refactored the backend, fixed mulitple secirity vulnerabilites, polished the forntend and brought the project to a smooth launch.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2024-08',
+  service: 'Web3 DApp Development',
+  testimonial: {
+    author: { name: 'Anon Bakery', role: 'Founder of Saintz' },
+    content:
+      'After the previous developer left, I was stuck with an unfinished, broken project. Piero managed to bring the project back on track at a high speed and made sure that we had a smooth launch. The platform runs reliably and whenever problems arise, Piero is available to fix them within a short amount of time. I am grateful for all the amazing work he has done.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+    I took over this project in an unfinished, quite desolate state after the previous developer had to unexpecteldy leave the project.
+
+    After taking inventory, I completely refactored the backend, fixed mulitple security vulnerabilites, polished the frontend and brought the project to a smooth launch.
+
+    Now I am maintaining the project and conitinuoulsy develpoping new features for the client.
+## What we did
+
+<TagList>
+  <TagListItem>Backend (Appwrite)</TagListItem>
+  <TagListItem>Frontend (React)</TagListItem>
+  <TagListItem>Smart Contracts (SmartPy)</TagListItem>
+  <TagListItem>Technical Lead and Maintenance</TagListItem>
+
+</TagList>
+
+<Blockquote
+  author={{ name: 'Anon Bakery', role: 'Founder of Saintz' }}
+  image={{ src: quoteWhite }}
+>
+After the previous developer left, I was stuck with an unfinished, broken project. Piero managed to bring the project back on track at a high speed and made sure that we had a smooth launch. The platform runs reliably and whenever problems arise, Piero is available to fix them within a short amount of time. I am grateful for all the amazing work he has done. 
+</Blockquote>
+
+{/* <StatList>
+  <StatListItem value="20%" label="Churn rate" />
+  <StatListItem value="5x" label="Uninstalls" />
+  <StatListItem value="2.3" label="App store rating" />
+  <StatListItem value="8" label="Pending lawsuits" />
+</StatList> */}

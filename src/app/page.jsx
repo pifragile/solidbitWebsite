@@ -198,7 +198,7 @@ export default async function Home() {
         client={{ name: 'Phobia', logo: logoAvolut }}
       >
         Piero places great importance on working precisely and neatly. With this
-        commitment, he has inspired and strongly influenced the team's working
+        commitment, he has inspired and strongly influenced the team&apos;s working
         methods. For Piero, it was always a given to take on responsibility in
         all his tasks. He consistently worked very reliably and with a high
         degree of independence. We were always very satisfied with his work

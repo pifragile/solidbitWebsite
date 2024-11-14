@@ -156,7 +156,7 @@ export default async function Work() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Alain Brenzikofer', logo: logoEncointer }}
       >
-Piero reliably delivered well thought out software designs as well as efficient and robust implementations which form a substantial part of Encointer's core protocol.
+Piero reliably delivered well thought out software designs as well as efficient and robust implementations which form a substantial part of Encointer&apos;s core protocol.
       </Testimonial>
 
       <Clients />

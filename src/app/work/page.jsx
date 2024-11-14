@@ -16,7 +16,6 @@ import logoEditart from '@/images/clients/editart.jpg'
 import logoSaintz from '@/images/clients/saintz.png'
 import logoStellars from '@/images/clients/stellars.png'
 import logoMetaCollector from '@/images/clients/metacollector.jpg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 

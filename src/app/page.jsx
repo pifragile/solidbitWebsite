@@ -30,11 +30,11 @@ const clients = [
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mt-12 rounded-4xl bg-neutral-950 py-20 sm:mt-16 sm:py-32 lg:mt-28">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            I’ve worked with hundreds of amazing people
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -64,11 +64,7 @@ function CaseStudies({ caseStudies }) {
         title="Harnessing technology for a brighter future"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
-        </p>
+        <p>Read my case studies to get a feel for the work I am doing.</p>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -81,7 +77,7 @@ function CaseStudies({ caseStudies }) {
                     <Image
                       src={caseStudy.logo}
                       alt={caseStudy.client}
-                      className="h-16 w-16"
+                      className="w-16"
                       unoptimized
                     />
                   </Link>
@@ -118,13 +114,10 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="I help you identify, explore and respond to new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
-        </p>
+        <p></p>
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
@@ -138,24 +131,23 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Backend development">
+              Whatever business logic you need for your application, I will help
+              you find the right technology for it and build an efficient and
+              secure backend to power your business.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Web3/Blockchain Develpopment">
+              I will help you create complete Web3 applications including smart
+              contracts, backend serivices and frontend.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="Frontend Devlopment">
+              I can help you build frontends for your application, where I like
+              simple and minimalistic designs.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Efficient Software Architecture and Designs">
+              When creating a new porduct, often time the software design is not
+              well thought out which will quickly cause issues early on. I will
+              help you avoid this problem.
             </ListItem>
           </List>
         </div>
@@ -166,7 +158,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'I am a software engineer from Switzerland valuing simple, efficent designs and implementations in order to provide high quality at competitive rates.',
 }
 
 export default async function Home() {
@@ -180,9 +172,9 @@ export default async function Home() {
             Simple and Efficient Software with Swiss Quality Guarantee.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            I am a software engineer from Switzerland valuing simple, efficent
+            designs and implementations in order to provide high quality at
+            competitive rates.
           </p>
         </FadeIn>
       </Container>
@@ -195,9 +187,12 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoAvolut }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Piero places great importance on working precisely and neatly. With this
+        commitment, he has inspired and strongly influenced the team's working
+        methods. For Piero, it was always a given to take on responsibility in
+        all his tasks. He consistently worked very reliably and with a high
+        degree of independence. We were always very satisfied with his work
+        performance.
       </Testimonial>
 
       <Services />

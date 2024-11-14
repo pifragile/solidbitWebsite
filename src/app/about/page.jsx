@@ -21,33 +21,32 @@ import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
 import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
-import { loadArticles } from '@/lib/mdx'
+import imagePiero from '@/images/team/piero2.JPG'
+import { loadArticles, loadCaseStudies } from '@/lib/mdx'
+import { TagList, TagListItem } from '@/components/TagList'
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-12 rounded-4xl bg-neutral-950 py-24 sm:mt-16 lg:mt-20 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="My Values"
+        title="Quality software for every budget."
         invert
       >
-        <p>
-          We are a group of like-minded people who share the same core values.
-        </p>
+        <p>The following are my core values, I adhere to.</p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Simplicity" invert>
+            By putting enough effort into the initial software design, I keep
+            things simple and aviod high costs and technical debt.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Efficiency" invert>
+            Efficient processes and designs allow for smooth operations and low
+            maintenance cost.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Quality" invert>
+            Swiss quality and realibility is the baseline of all work I do.
           </GridListItem>
         </GridList>
       </Container>
@@ -178,53 +177,116 @@ function Team() {
 }
 
 export const metadata = {
-  title: 'About Us',
+  title: 'About me',
   description:
     'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
 }
 
 export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2)
-
+  let allCaseStudies = (await loadCaseStudies()).slice(0, 2)
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About me" title="Hi, I'm Piero.">
+        <div className="mb-10 mt-5">
+          <FadeIn>
+            <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
+              <Image
+                alt=""
+                {...imagePiero}
+                className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+              />
+              <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black to-black/0 to-40% p-6">
+                <p className="font-display text-base/6 font-semibold tracking-wide text-white">
+                  {'Piero'}
+                </p>
+                <p className="mt-2 text-sm text-white">{'Founder'}</p>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          In 2022, I founded Solidbit in order to help clients successfully
+          design, build and launch their software projects efficiently and at a
+          reasonable cost.
         </p>
+
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            I was born and raised in Switzerland and studied Computer Science at
+            ETH Zürich, one of the top 10 technical universities in the world.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            With Solidbit, I created a software engineering company where I
+            value realiaility, simplicity, efficiency in order to devlier good
+            quality software for my clients at competitive rates.
+          </p>
+
+          <p>
+            When I am not designing and writing software, I like to surf, create
+            art with algorithms and produce music.
           </p>
         </div>
       </PageIntro>
       <Container className="mt-16">
-        <StatList>
+        My skills:
+        <br />
+        <br />
+        <TagList>
+          <TagListItem>Backend</TagListItem>
+          <TagListItem>Frontend</TagListItem>
+          <TagListItem>Web3</TagListItem>
+          <TagListItem>Blockchain</TagListItem>
+          <TagListItem>Smart Contracts</TagListItem>
+          <TagListItem>Software Architecture and Design</TagListItem>
+          <TagListItem>Project Planning</TagListItem>
+        </TagList>
+        <br />
+        <br />
+        My stack:
+        <br />
+        <br />
+        <TagList>
+          <TagListItem>Python</TagListItem>
+          <TagListItem>Django</TagListItem>
+          <TagListItem>JavaScript</TagListItem>
+          <TagListItem>React</TagListItem>
+          <TagListItem>NodeJS</TagListItem>
+          <TagListItem>Rust</TagListItem>
+          <TagListItem>Substrate</TagListItem>
+          <TagListItem>SmartPy</TagListItem>
+          <TagListItem>Solidity</TagListItem>
+          <TagListItem>Postgres</TagListItem>
+          <TagListItem>MongoDB</TagListItem>
+          <TagListItem>AWS</TagListItem>
+          <TagListItem>Appwrite</TagListItem>
+        </TagList>
+        <br />
+        <br />
+        My languages spoken:
+        <br />
+        <br />
+        <TagList>
+          <TagListItem>English</TagListItem>
+          <TagListItem>German</TagListItem>
+          <TagListItem>Swiss German</TagListItem>
+        </TagList>
+        {/* <StatList>
           <StatListItem value="35" label="Underpaid employees" />
           <StatListItem value="52" label="Placated clients" />
           <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
+        </StatList> */}
       </Container>
 
       <Culture />
 
-      <Team />
+      {/* <Team /> */}
 
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-        pages={blogArticles}
+        title="Case Studies"
+        intro="Explore case studies to get a feel of the work I am doing."
+        pages={allCaseStudies}
       />
 
       <ContactSection />

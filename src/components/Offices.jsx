@@ -21,7 +21,7 @@ export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Switzerland" invert={invert}>
+        <Office name="Solidbit GmbH" invert={invert}>
           General Wille Strasse 99
           <br />
           8706, Meilen, Swizterland

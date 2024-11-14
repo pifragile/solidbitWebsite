@@ -49,11 +49,40 @@ function DribbbleIcon(props) {
   )
 }
 
+function LinkedInIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M19 0H5C2.243 0 0 2.243 0 5v14c0 2.757 2.243 5 5 5h14c2.757 0 5-2.243 5-5V5c0-2.757-2.243-5-5-5zM7.53 19H4.91V9.57h2.62V19zM6.22 8.287c-.847 0-1.53-.683-1.53-1.53 0-.847.683-1.53 1.53-1.53s1.53.683 1.53 1.53c0 .847-.683 1.53-1.53 1.53zM19 19h-2.62v-4.98c0-1.186-.022-2.712-1.653-2.712-1.653 0-1.91 1.293-1.91 2.63V19H10.22V9.57h2.52v1.284h.036c.35-.662 1.208-1.36 2.488-1.36 2.662 0 3.16 1.753 3.16 4.03V19z"
+      />
+    </svg>
+  )
+}
+
+function XIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.95 15.536a1 1 0 0 1-1.414 0L12 13.414l-3.536 4.122a1 1 0 1 1-1.414-1.414L10.586 12 7.05 8.464a1 1 0 0 1 1.414-1.414L12 10.586l3.536-4.122a1 1 0 1 1 1.414 1.414L13.414 12l3.536 4.122a1 1 0 0 1 0 1.414z"
+      />
+    </svg>
+  )
+}
+
 export const socialMediaProfiles = [
-  { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
-  { title: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
-  { title: 'GitHub', href: 'https://github.com', icon: GitHubIcon },
-  { title: 'Dribbble', href: 'https://dribbble.com', icon: DribbbleIcon },
+  // { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
+  // { title: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
+  { title: 'GitHub', href: 'https://github.com/pifragile', icon: GitHubIcon },
+  {
+    title: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/piero-guicciardi-66b939152/',
+    icon: LinkedInIcon,
+  },
+  { title: 'X', href: 'https://x.com/pifragile/', icon: XIcon },
 ]
 
 export function SocialMedia({ className, invert = false }) {

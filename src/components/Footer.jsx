@@ -33,10 +33,10 @@ const navigation = [
       { title: 'Contact', href: '/contact' },
     ],
   },
-  // {
-  //   title: 'Connect',
-  //   links: socialMediaProfiles,
-  // },
+  {
+    title: 'Connect',
+    links: socialMediaProfiles,
+  },
 ]
 
 function Navigation() {

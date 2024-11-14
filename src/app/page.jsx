@@ -131,6 +131,14 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+            <ListItem title="Software Prototypes for Startups">
+              Do you want to launch your start up, but lack the technical
+              expertise? Do you want to quickly test out your idea without
+              having to spend huge amounts of money first? I will help you
+              define a minimal viable product (MVP), implement it and bring it
+              to production quickly.
+            </ListItem>
+
             <ListItem title="Backend development">
               Whatever business logic you need for your application, I will help
               you find the right technology for it and build an efficient and
@@ -145,9 +153,11 @@ function Services() {
               simple and minimalistic designs.
             </ListItem>
             <ListItem title="Efficient Software Architecture and Designs">
-              When creating a new porduct, often time the software design is not
-              well thought out which will quickly cause issues early on. I will
-              help you avoid this problem.
+              Wether you are creating a new product or have an existing
+              codebase, it is vital to have well thought out, efficient designs
+              in order to avoid technical debt and ensure maintainabilty. I will
+              help you optimize your software design to be as efficient and
+              simple as possible while still maintaining the highest quality.
             </ListItem>
           </List>
         </div>

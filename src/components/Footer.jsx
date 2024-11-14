@@ -26,16 +26,17 @@ const navigation = [
   {
     title: 'Company',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
+      { title: 'About me', href: '/about' },
+      //{ title: 'Work', href: '/work' },
+      // { title: 'Process', href: '/process' },
+      // { title: 'Blog', href: '/blog' },
       { title: 'Contact', href: '/contact' },
     ],
   },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
+  // {
+  //   title: 'Connect',
+  //   links: socialMediaProfiles,
+  // },
 ]
 
 function Navigation() {

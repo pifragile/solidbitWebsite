@@ -1,3 +1,4 @@
+'use client'
 import { useId } from 'react'
 import Link from 'next/link'
 
@@ -45,9 +46,37 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
+  const handleSubmit = async (e) => {
+    e.preventDefault() // Prevent the default form submission
+
+    const formData = new FormData(e.target) // Collect form data
+    const formObject = Object.fromEntries(formData.entries()) // Convert to object
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formObject),
+      })
+
+      if (response.ok) {
+        console.log('Your message has been sent successfully!')
+        e.target.reset() // Clear the form
+      } else {
+        const error = await response.json()
+        console.log(`Error: ${error.message || 'Failed to send message'}`)
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      console.log('An error occurred. Please try again.')
+    }
+  }
+
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
@@ -103,9 +132,7 @@ function ContactDetails() {
           Email me
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['All inquieries', 'hello@solid-bit.com'],
-          ].map(([label, email]) => (
+          {[['All inquieries', 'hello@solid-bit.com']].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
               <dd>
@@ -131,10 +158,10 @@ function ContactDetails() {
   )
 }
 
-export const metadata = {
-  title: 'Contact',
-  description: 'Let’s work together. I can’t wait to hear from you.',
-}
+// export const metadata = {
+//   title: 'Contact',
+//   description: 'Let’s work together. I can’t wait to hear from you.',
+// }
 
 export default function Contact() {
   return (

@@ -155,10 +155,9 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'Alain Brenzikofer', logo: logoEncointer }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+Piero reliably delivered well thought out software designs as well as efficient and robust implementations which form a substantial part of Encointer's core protocol.
       </Testimonial>
 
       <Clients />

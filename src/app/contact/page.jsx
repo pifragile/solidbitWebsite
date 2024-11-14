@@ -1,5 +1,5 @@
 'use client'
-import { useId } from 'react'
+import { useId, useState } from 'react'
 import Link from 'next/link'
 
 import { Border } from '@/components/Border'
@@ -46,6 +46,7 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
+  const [message, setMessage] = useState('')
   const handleSubmit = async (e) => {
     e.preventDefault() // Prevent the default form submission
 
@@ -53,6 +54,7 @@ function ContactForm() {
     const formObject = Object.fromEntries(formData.entries()) // Convert to object
 
     try {
+      setMessage('Sending...')
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -62,15 +64,14 @@ function ContactForm() {
       })
 
       if (response.ok) {
-        console.log('Your message has been sent successfully!')
+        setMessage('Your message has been sent successfully!')
         e.target.reset() // Clear the form
       } else {
         const error = await response.json()
-        console.log(`Error: ${error.message || 'Failed to send message'}`)
+        setMessage(`Error: ${error.message || 'Failed to send message'}`)
       }
     } catch (error) {
-      console.error('Error submitting form:', error)
-      console.log('An error occurred. Please try again.')
+      setMessage('Error submitting form:', error)
     }
   }
 
@@ -107,6 +108,7 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
+        {message !== '' && <p className="mt-10">{message}</p>}
         <Button type="submit" className="mt-10">
           Let’s work together
         </Button>

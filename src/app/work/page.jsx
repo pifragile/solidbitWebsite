@@ -92,8 +92,8 @@ function CaseStudies({ caseStudies }) {
 }
 
 const clients = [
-  ['Avolut', logoAvolut],
   ['Encointer', logoEncointer],
+  ['Avolut', logoAvolut],
   ['Web3 Foundation', logoWeb3foundation],
   ['EditArt', logoEditart],
   ['SAINTZ', logoSaintz],
@@ -131,7 +131,7 @@ function Clients() {
 }
 
 export const metadata = {
-  title: 'Our Work',
+  title: 'Work',
   description:
     'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
 }

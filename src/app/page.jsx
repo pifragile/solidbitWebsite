@@ -19,8 +19,8 @@ import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Avolut', logoAvolut],
   ['Encointer', logoEncointer],
+  ['Avolut', logoAvolut],
   ['Web3 Foundation', logoWeb3foundation],
   ['EditArt', logoEditart],
   ['SAINTZ', logoSaintz],
@@ -146,7 +146,7 @@ function Services() {
             </ListItem>
             <ListItem title="Web3/Blockchain Develpopment">
               I will help you create complete Web3 applications including smart
-              contracts, backend serivices and frontend.
+              contracts, backend services and frontend.
             </ListItem>
             <ListItem title="Frontend Devlopment">
               I can help you build frontends for your application, where I like

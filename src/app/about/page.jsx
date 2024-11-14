@@ -33,13 +33,13 @@ function Culture() {
         title="Quality software for every budget."
         invert
       >
-        <p>The following are my core values, I adhere to.</p>
+        <p>The following are the core values I adhere to.</p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
           <GridListItem title="Simplicity" invert>
             By putting enough effort into the initial software design, I keep
-            things simple and aviod high costs and technical debt.
+            things simple and avoid high costs and technical debt.
           </GridListItem>
           <GridListItem title="Efficiency" invert>
             Efficient processes and designs allow for smooth operations and low
@@ -218,7 +218,7 @@ export default async function About() {
           </p>
           <p>
             With Solidbit, I created a software engineering company where I
-            value realiaility, simplicity, efficiency in order to devlier good
+            value realiaility, simplicity, efficiency in order to deliver good
             quality software for my clients at competitive rates.
           </p>
 
@@ -233,6 +233,7 @@ export default async function About() {
         <br />
         <br />
         <TagList>
+          <TagListItem>Prototypes for Startups</TagListItem>
           <TagListItem>Backend</TagListItem>
           <TagListItem>Frontend</TagListItem>
           <TagListItem>Web3</TagListItem>

@@ -117,7 +117,7 @@ function Team() {
 export const metadata = {
   title: 'About me',
   description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+    'Solidbit - Simple and Efficient Software with Swiss Quality Guarantee.',
 }
 
 export default async function About() {

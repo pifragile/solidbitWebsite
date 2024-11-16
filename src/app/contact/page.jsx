@@ -66,6 +66,9 @@ function ContactForm() {
       if (response.ok) {
         setMessage('Your message has been sent successfully!')
         e.target.reset() // Clear the form
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-16777680120/zGBMCKmNwuoZEPipnMA-'
+        });
       } else {
         const error = await response.json()
         setMessage(`Error: ${error.message || 'Failed to send message'}`)

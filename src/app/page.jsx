@@ -15,6 +15,8 @@ import logoEditart from '@/images/clients/editart.jpg'
 import logoSaintz from '@/images/clients/saintz.png'
 import logoStellars from '@/images/clients/stellars.png'
 import logoMetaCollector from '@/images/clients/metacollector.jpg'
+import logoCuda from '@/images/clients/cuda.png'
+import logoNFTCollective from '@/images/clients/nftcollective.png'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
@@ -24,6 +26,8 @@ const clients = [
   ['Web3 Foundation', logoWeb3foundation],
   ['EditArt', logoEditart],
   ['SAINTZ', logoSaintz],
+  ['CUDA', logoCuda],
+  //['NFT Collective', logoNFTCollective],
   ['StellarsDAO', logoStellars],
   ['Metacollector', logoMetaCollector],
 ]

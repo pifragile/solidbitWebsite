@@ -7,7 +7,7 @@ export async function POST(req) {
     const emailConfig = {
       from: 'hello@pigu.ch',
       to: 'hello@solid-bit.com',
-      subject: `New Contact Form Submission`,
+      subject: `Email API endpoint called`,
       text: `You received a new message:\n\nName: ${data}`,
       html: `
                   <h1>New Contact Form Submission</h1>

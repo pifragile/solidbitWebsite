@@ -1,20 +1,19 @@
 import { sendEmail } from '@/lib/mail'
 import { NextResponse } from 'next/server'
 
+const headers = new Headers()
+headers.set('Access-Control-Allow-Origin', '*') // Replace '*' with your origin
+headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS')
+headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+
+export async function OPTIONS(req) {
+  return new Response(null, {
+    status: 204, // No content
+    headers,
+  })
+}
+
 export async function POST(req) {
-  const headers = new Headers()
-  headers.set('Access-Control-Allow-Origin', '*') // Replace '*' with your origin
-  headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS')
-  headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-
-  // Handle preflight OPTIONS requests
-  if (req.method === 'OPTIONS') {
-    return new Response(null, {
-      status: 204, // No content
-      headers,
-    })
-  }
-
   try {
     const data = JSON.stringify(await req.json())
     const emailConfig = {

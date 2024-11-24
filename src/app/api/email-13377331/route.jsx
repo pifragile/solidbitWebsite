@@ -5,6 +5,7 @@ const headers = new Headers()
 headers.set('Access-Control-Allow-Origin', '*') // Replace '*' with your origin
 headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS')
 headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+headers.set('Access-Control-Allow-Credentials', 'true');
 
 export async function OPTIONS(req) {
   return new Response(null, {

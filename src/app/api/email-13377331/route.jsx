@@ -5,7 +5,7 @@ const headers = new Headers()
 headers.set('Access-Control-Allow-Origin', '*') // Replace '*' with your origin
 headers.set('Access-Control-Allow-Methods', 'POST, OPTIONS')
 headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-headers.set('Access-Control-Allow-Credentials', 'true');
+headers.set('Access-Control-Allow-Credentials', 'true')
 
 export async function OPTIONS(req) {
   return new Response(null, {
@@ -31,19 +31,15 @@ export async function POST(req) {
     // Send the email
     await sendEmail(emailConfig)
 
-    return NextResponse.json(
-      { message: 'Success' },
-      {
-        headers,
-      },
-    )
+    return new Response(null, {
+      status: 204, // No content
+      headers,
+    })
   } catch (err) {
     console.log(err)
-    return NextResponse.json(
-      { message: 'Internal server error', status: 500 },
-      {
-        headers,
-      },
-    )
+    return new Response(null, {
+      status: 500,
+      headers,
+    })
   }
 }

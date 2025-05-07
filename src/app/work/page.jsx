@@ -15,6 +15,7 @@ import logoWeb3foundation from '@/images/clients/web3foundation.png'
 import logoEditart from '@/images/clients/editart.jpg'
 import logoSaintz from '@/images/clients/saintz.png'
 import logoStellars from '@/images/clients/stellars.png'
+import logoTezosFoundation from '@/images/clients/tezosFoundation.png'
 import logoMetaCollector from '@/images/clients/metacollector.jpg'
 import logoCuda from '@/images/clients/cuda.png'
 import { formatDate } from '@/lib/formatDate'
@@ -100,6 +101,7 @@ const clients = [
   ['CUDA', logoCuda],
   ['StellarsDAO', logoStellars],
   ['Metacollector', logoMetaCollector],
+  ['Tezos Foundation', logoTezosFoundation],
 ]
 
 function Clients() {

@@ -14,6 +14,7 @@ import logoWeb3foundation from '@/images/clients/web3foundation.png'
 import logoEditart from '@/images/clients/editart.jpg'
 import logoSaintz from '@/images/clients/saintz.png'
 import logoStellars from '@/images/clients/stellars.png'
+import logoTezosFoundation from '@/images/clients/tezosFoundation.png'
 import logoMetaCollector from '@/images/clients/metacollector.jpg'
 import logoCuda from '@/images/clients/cuda.png'
 import logoNFTCollective from '@/images/clients/nftcollective.png'
@@ -21,9 +22,10 @@ import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Encointer', logoEncointer],
   ['Avolut', logoAvolut],
+  ['Tezos Foundation', logoTezosFoundation],
   ['Web3 Foundation', logoWeb3foundation],
+  ['Encointer', logoEncointer],
   ['EditArt', logoEditart],
   ['SAINTZ', logoSaintz],
   ['CUDA', logoCuda],

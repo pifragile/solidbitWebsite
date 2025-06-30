@@ -16,11 +16,11 @@ export function MainComponent() {
       content: (
         <>
           Piero places great importance on working precisely and neatly. With
-          this commitment, he has inspired and strongly influenced the team&apos;s
-          working methods. For Piero, it was always a given to take on
-          responsibility in all his tasks. He consistently worked very reliably
-          and with a high degree of independence. We were always very satisfied
-          with his work performance.
+          this commitment, he has inspired and strongly influenced the
+          team&apos;s working methods. For Piero, it was always a given to take
+          on responsibility in all his tasks. He consistently worked very
+          reliably and with a high degree of independence. We were always very
+          satisfied with his work performance.
           <br />
           <br />- Florian Türler, Technical Director at Avolut
         </>
@@ -78,12 +78,11 @@ export function MainComponent() {
       content: (
         <>
           Expertise: <br />
-          - Full Stack Development (Web2 / Web3)
-          <br />
-          - Software Prototypes for Startups
-          <br />
-          - Efficient Software Architecture and Design
-          <br />
+          <ul className="dash-list">
+            <li>Full Stack Development (Web2 / Web3)</li>
+            <li>Software Prototypes for Startups</li>
+            <li>Efficient Software Architecture and Design</li>
+          </ul>
         </>
       ),
       width: '512px',
@@ -91,63 +90,73 @@ export function MainComponent() {
     {
       content: (
         <>
-          Clients: <br />-{' '}
-          <a
-            href="https://avolut.ch/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Avolut
-          </a>
-          <br />-{' '}
-          <a
-            href="https://tezos.foundation/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tezos Foundation
-          </a>
-          <br />-{' '}
-          <a
-            href="https://web3.foundation/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Web3 Foundation
-          </a>
-          <br />-{' '}
-          <a
-            href="https://encointer.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Encointer
-          </a>
-          <br />-{' '}
-          <a
-            href="https://www.editart.xyz/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            EditArt
-          </a>
-          <br />-{' '}
-          <a
-            href="https://saintz.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Saintz
-          </a>
-          <br />-{' '}
-          <a
-            href="https://stellarsdao.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            StellarsDAO
-          </a>
-          <br />- Cuda
+          Clients: <br />
+          <ul className="dash-list">
+            <li>
+              <a
+                href="https://avolut.ch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Avolut
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tezos.foundation/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tezos Foundation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://web3.foundation/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Web3 Foundation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://encointer.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Encointer
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.editart.xyz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EditArt
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://saintz.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Saintz
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://stellarsdao.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                StellarsDAO
+              </a>
+            </li>
+            <li>Cuda</li>
+          </ul>
         </>
       ),
       width: '256px',
@@ -156,38 +165,51 @@ export function MainComponent() {
       content: (
         <>
           Projects: <br />
-          - Tezos Foundation Grantee, received funding and staff to support the
-          development and promotion of EditArt.
-          <br />
-          - Web3 Foundation Grantee, ecosystem research and technical design for
-          integrating Polkadot with the ISO20022 financial messaging standard
-          <br />
-          - Big Tip Grantee from the Polkadot Treasury for building LiteScan, a
-          lightweight indexer for Polkadot chains
-          <br />
-          - Contractor for SAINTZ, building a smart contract backend for a
-          content creator platform (SmartPy, JS).
-          <br />
-          - Contractor for Avolut. Building backend applications for fashion
-          retailers (Python/Django/Postgres).
-          <br />
-          - Member of the Polkadot Technical Fellowship
-          <br />
-          - Web3 Foundation Grantee, building a decentralized democratic
-          governance module (Substrate, Rust)
-          <br />
-          - Raised seed funding for Re-Tain, a generative art platform on Tezos.
-          Role of founder and technical lead.
-          <br />
-          - Contractor for StellarsDAO. Design and implementation of a multisig
-          wallet web app for Tezos (SmartPy/React).
-          <br />
-          - Contractor for Encointer Association. Blockchain runtime
-          architecture and implementation, protocol design (Substrate, Rust)
-          <br />
-          - EditART, a generative art platform on the Tezos blockchain (SmartPy,
-          React, NodeJs, Python)
-          <br />
+          <ul className="dash-list">
+            <li>
+              Tezos Foundation Grantee, received funding and staff to support the
+              development and promotion of EditArt.
+            </li>
+            <li>
+              Web3 Foundation Grantee, ecosystem research and technical design for
+              integrating Polkadot with the ISO20022 financial messaging standard
+            </li>
+            <li>
+              Big Tip Grantee from the Polkadot Treasury for building LiteScan, a
+              lightweight indexer for Polkadot chains
+            </li>
+            <li>
+              Contractor for SAINTZ, building a smart contract backend for a
+              content creator platform (SmartPy, JS).
+            </li>
+            <li>
+              Contractor for Avolut. Building backend applications for fashion
+              retailers (Python/Django/Postgres).
+            </li>
+            <li>
+              Member of the Polkadot Technical Fellowship
+            </li>
+            <li>
+              Web3 Foundation Grantee, building a decentralized democratic
+              governance module (Substrate, Rust)
+            </li>
+            <li>
+              Raised seed funding for Re-Tain, a generative art platform on Tezos.
+              Role of founder and technical lead.
+            </li>
+            <li>
+              Contractor for StellarsDAO. Design and implementation of a multisig
+              wallet web app for Tezos (SmartPy/React).
+            </li>
+            <li>
+              Contractor for Encointer Association. Blockchain runtime
+              architecture and implementation, protocol design (Substrate, Rust)
+            </li>
+            <li>
+              EditART, a generative art platform on the Tezos blockchain (SmartPy,
+              React, NodeJs, Python)
+            </li>
+          </ul>
         </>
       ),
       width: '1536px',
@@ -197,22 +219,17 @@ export function MainComponent() {
       content: (
         <>
           Technologies: <br />
-          - Python / Django / Flask
-          <br />
-          - Javascript / Node / Express / React / Vite / Next / p5.js
-          <br />
-          - Rust
-          <br />
-          - Parity Substrate
-          <br />
-          - Ethereum Smart Contracts: Solidity
-          <br />
-          - Tezos Smart Contracts: SmartPy
-          <br />
-          - Solana Smart Contracts: Rust / Anchor
-          <br />
-          - MongoDB / PostgreSQL
-          <br />- AWS / Digital Ocean
+          <ul className="dash-list">
+            <li>Python / Django / Flask</li>
+            <li>Javascript / Node / Express / React / Vite / Next / p5.js</li>
+            <li>Rust</li>
+            <li>Parity Substrate</li>
+            <li>Ethereum Smart Contracts: Solidity</li>
+            <li>Tezos Smart Contracts: SmartPy</li> 
+            <li>Solana Smart Contracts: Rust / Anchor</li>
+            <li>MongoDB / PostgreSQL</li>
+            <li>AWS / Digital Ocean</li>
+          </ul>
         </>
       ),
       width: '512px',

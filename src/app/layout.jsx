@@ -13,6 +13,9 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
         <MainComponent/>
       </body>

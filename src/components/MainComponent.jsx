@@ -1,14 +1,15 @@
-import logo from '../images/logo.png'
+import logo from '@/images/logo2.png'
+import Image from 'next/image'
 
 export function MainComponent() {
   const children = [
     {
-      content: <img src={logo} alt="solidbit logo" style={{ width: '100px' }} />,
+      content: <Image src={logo} alt={"Solidbit"} width={100}/>,
       width: '100px',
     },
     {
       content:
-        'reliable and efficient software development with swiss quality guarantee.',
+        'Reliable and efficient software development with Swiss quality guarantee.',
       width: '200px',
     },
     {

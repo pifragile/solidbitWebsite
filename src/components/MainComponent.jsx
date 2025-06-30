@@ -112,7 +112,7 @@ export function MainComponent() {
           <br />
         </>
       ),
-      width: 'min(950px, 100vw)',
+      width: 'min(1400px, 100vw)',
     },
     {
       content: (

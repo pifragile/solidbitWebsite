@@ -11,18 +11,24 @@ body {
 }
 
 
+.wrapper {
+    background: white;
+    /* This ensures empty space is white */
+}
+
 .container {
     display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
     flex-wrap: wrap;
+    gap: 0;
+    position: relative;
 }
 
 .child {
-    display: inline-block;
-    border: 1px solid black;
-    margin: 0;
+    background: white;
+    flex: 0 0 auto;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    outline: 1px solid black;
     padding: 20px;
 }
 

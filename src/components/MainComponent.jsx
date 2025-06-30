@@ -4,7 +4,7 @@ import Image from 'next/image'
 export function MainComponent() {
   const children = [
     {
-      content: <Image src={logo} alt={"Solidbit"} width={100}/>,
+      content: <Image src={logo} alt={'Solidbit'} width={100} />,
       width: '100px',
     },
     {
@@ -112,7 +112,7 @@ export function MainComponent() {
           <br />
         </>
       ),
-      width: "min(950px, 100vw)",
+      width: 'min(950px, 100vw)',
     },
     {
       content: (
@@ -155,14 +155,21 @@ export function MainComponent() {
           <br />
           <a href="mailto:piero@solidbit.ch">hello@solid-bit.com</a>
           <br />
-          <a href="https://www.linkedin.com/in/piero-guicciardi-66b939152/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/piero-guicciardi-66b939152/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
           <br />
-          <a href="https://github.com/pifragile" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/pifragile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             GitHub
           </a>
-
         </>
       ),
       width: 200,
@@ -170,12 +177,14 @@ export function MainComponent() {
   ]
 
   return (
-    <div className="container">
-      {children.map((child, idx) => (
-        <div key={idx} className="child" style={{ width: child.width }}>
-          {child.content}
-        </div>
-      ))}
+    <div className="wrapper">
+      <div className="container">
+        {children.map((child, idx) => (
+          <div key={idx} className="child" style={{ width: child.width }}>
+            {child.content}
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

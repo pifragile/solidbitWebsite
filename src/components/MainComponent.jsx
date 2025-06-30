@@ -25,7 +25,7 @@ export function MainComponent() {
           <br />- Florian Türler, Technical Director at Avolut
         </>
       ),
-      width: 500,
+      width: '500px',
     },
     {
       content: (
@@ -40,7 +40,7 @@ export function MainComponent() {
           <br />- Anon Bakery, Founder of Saintz
         </>
       ),
-      width: 450,
+      width: '450px',
     },
     {
       content: (
@@ -60,7 +60,7 @@ export function MainComponent() {
           art with algorithms and produce music.
         </>
       ),
-      width: 450,
+      width: '450px',
     },
     {
       content: (
@@ -72,7 +72,7 @@ export function MainComponent() {
           <br />- Alain Brenzikofer, Founder of Encointer
         </>
       ),
-      width: 420,
+      width: '420px',
     },
     {
       content: (
@@ -112,7 +112,7 @@ export function MainComponent() {
           <br />
         </>
       ),
-      width: 'min(1400px, 100vw)',
+      width: '1400px',
     },
     {
       content: (
@@ -134,7 +134,7 @@ export function MainComponent() {
           <br />- StellarsDAO
         </>
       ),
-      width: 200,
+      width: '200px',
     },
     {
       content: (
@@ -146,7 +146,7 @@ export function MainComponent() {
           $1200/day
         </>
       ),
-      width: 100,
+      width: '100px',
     },
     {
       content: (
@@ -172,7 +172,7 @@ export function MainComponent() {
           </a>
         </>
       ),
-      width: 200,
+      width: '200px',
     },
   ]
 
@@ -180,7 +180,11 @@ export function MainComponent() {
     <div className="wrapper">
       <div className="container">
         {children.map((child, idx) => (
-          <div key={idx} className="child" style={{ width: child.width }}>
+          <div
+            key={idx}
+            className="child"
+            style={{ width: `min(90vw, ${child.width})` }}
+          >
             {child.content}
           </div>
         ))}

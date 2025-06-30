@@ -25,6 +25,7 @@ body {
     flex-wrap: wrap;
     gap: 0;
     position: relative;
+    max-width: 1720px;
 }
 
 .child {

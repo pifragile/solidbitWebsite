@@ -77,6 +77,20 @@ export function MainComponent() {
     {
       content: (
         <>
+          Expertise: <br />
+          - Full Stack Development (Web2 / Web3)
+          <br />
+          - Software Prototypes for Startups
+          <br />
+          - Efficient Software Architecture and Design
+          <br />
+        </>
+      ),
+      width: '512px',
+    },
+    {
+      content: (
+        <>
           Clients: <br />-{' '}
           <a
             href="https://avolut.ch/"
@@ -125,9 +139,15 @@ export function MainComponent() {
           >
             Saintz
           </a>
-          <br />
-          - Cuda
-          <br />- StellarsDAO
+          <br />-{' '}
+          <a
+            href="https://stellarsdao.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            StellarsDAO
+          </a>
+          <br />- Cuda
         </>
       ),
       width: '256px',

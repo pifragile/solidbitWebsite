@@ -25,3 +25,10 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

@@ -1,7 +1,9 @@
+import logo from '../images/logo.png'
+
 export function MainComponent() {
   const children = [
     {
-      content: 'solidbit gmbh',
+      content: <img src={logo} alt="solidbit logo" style={{ width: '100px' }} />,
       width: '100px',
     },
     {

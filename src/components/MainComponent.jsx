@@ -197,9 +197,9 @@ export function MainComponent() {
       content: (
         <>
           Technologies: <br />
-          - Python/Django/Flask
+          - Python / Django / Flask
           <br />
-          - Javascript/Node/Express/React/Vite/Next/p5.js
+          - Javascript / Node / Express / React / Vite / Next / p5.js
           <br />
           - Rust
           <br />
@@ -209,10 +209,10 @@ export function MainComponent() {
           <br />
           - Tezos Smart Contracts: SmartPy
           <br />
-          - Solana Smart Contracts: Rust/Anchor
+          - Solana Smart Contracts: Rust / Anchor
           <br />
-          - MongoDB/PostgreSQL
-          <br />- AWS/Digital Ocean
+          - MongoDB / PostgreSQL
+          <br />- AWS / Digital Ocean
         </>
       ),
       width: '512px',

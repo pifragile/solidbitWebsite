@@ -1,23 +1,23 @@
-import { RootLayout } from '@/components/RootLayout'
+import { MainComponent } from '@/components/MainComponent'
 import { GoogleTagManager } from '@next/third-parties/google'
-
-import '@/styles/tailwind.css'
+import '@/styles/main.css'
 
 export const metadata = {
   title: {
-    template: '%s - Solidbit',
+    template: '%s - solidbit',
     default:
-      'Solidbit - Simple and Efficient Software with Swiss Quality Guarantee.',
+      'solidbit',
   },
 }
 
 export default function Layout({ children }) {
   return (
-    <html lang="en" className="h-full bg-neutral-950 text-base antialiased">
-      <body className="flex min-h-full flex-col">
-        <RootLayout>{children}</RootLayout>
+    <html lang="en">
+      <body>
+        <MainComponent/>
       </body>
       <GoogleTagManager gtmId="AW-16777680120" />
     </html>
   )
 }
+

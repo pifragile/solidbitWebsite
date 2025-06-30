@@ -1,0 +1,27 @@
+html {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.child {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 0;
+    padding: 20px;
+}

@@ -16,7 +16,7 @@ export function MainComponent() {
       content: (
         <>
           Piero places great importance on working precisely and neatly. With
-          this commitment, he has inspired and strongly influenced the team's
+          this commitment, he has inspired and strongly influenced the team&apos;s
           working methods. For Piero, it was always a given to take on
           responsibility in all his tasks. He consistently worked very reliably
           and with a high degree of independence. We were always very satisfied
@@ -67,7 +67,7 @@ export function MainComponent() {
         <>
           Piero reliably delivered well thought out software designs as well as
           efficient and robust implementations which form a substantial part of
-          Encointer's core protocol.
+          Encointer&apos;s core protocol.
           <br />
           <br />- Alain Brenzikofer, Founder of Encointer
         </>

@@ -5,12 +5,12 @@ export function MainComponent() {
   const children = [
     {
       content: <Image src={logo} alt={'Solidbit'} width={100} />,
-      width: '100px',
+      width: '128px',
     },
     {
       content:
         'Reliable and efficient software development with Swiss quality guarantee.',
-      width: '200px',
+      width: '256px',
     },
     {
       content: (
@@ -25,7 +25,7 @@ export function MainComponent() {
           <br />- Florian Türler, Technical Director at Avolut
         </>
       ),
-      width: '500px',
+      width: '512px',
     },
     {
       content: (
@@ -40,7 +40,7 @@ export function MainComponent() {
           <br />- Anon Bakery, Founder of Saintz
         </>
       ),
-      width: '450px',
+      width: '512px',
     },
     {
       content: (
@@ -60,7 +60,7 @@ export function MainComponent() {
           art with algorithms and produce music.
         </>
       ),
-      width: '450px',
+      width: '512px',
     },
     {
       content: (
@@ -72,7 +72,65 @@ export function MainComponent() {
           <br />- Alain Brenzikofer, Founder of Encointer
         </>
       ),
-      width: '420px',
+      width: '256px',
+    },
+    {
+      content: (
+        <>
+          Clients: <br />-{' '}
+          <a
+            href="https://avolut.ch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Avolut
+          </a>
+          <br />-{' '}
+          <a
+            href="https://tezos.foundation/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tezos Foundation
+          </a>
+          <br />-{' '}
+          <a
+            href="https://web3.foundation/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Web3 Foundation
+          </a>
+          <br />-{' '}
+          <a
+            href="https://encointer.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Encointer
+          </a>
+          <br />-{' '}
+          <a
+            href="https://www.editart.xyz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            EditArt
+          </a>
+          <br />-{' '}
+          <a
+            href="https://saintz.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Saintz
+          </a>
+          <br />
+          - Cuda
+          <br />- StellarsDAO
+        </>
+      ),
+      width: '256px',
     },
     {
       content: (
@@ -112,29 +170,32 @@ export function MainComponent() {
           <br />
         </>
       ),
-      width: '1400px',
+      width: '1536px',
     },
+
     {
       content: (
         <>
-          Clients: <br />
-          - Avolut
+          Technologies: <br />
+          - Python/Django/Flask
           <br />
-          - Tezos Foundation
+          - Javascript/Node/Express/React/Vite/Next/p5.js
           <br />
-          - Web3 Foundation
+          - Rust
           <br />
-          - Encointer
+          - Parity Substrate
           <br />
-          - EditArt
+          - Ethereum Smart Contracts: Solidity
           <br />
-          - Saintz
+          - Tezos Smart Contracts: SmartPy
           <br />
-          - Cuda
-          <br />- StellarsDAO
+          - Solana Smart Contracts: Rust/Anchor
+          <br />
+          - MongoDB/PostgreSQL
+          <br />- AWS/Digital Ocean
         </>
       ),
-      width: '200px',
+      width: '512px',
     },
     {
       content: (
@@ -146,7 +207,7 @@ export function MainComponent() {
           $1200/day
         </>
       ),
-      width: '100px',
+      width: '128px',
     },
     {
       content: (
@@ -172,7 +233,7 @@ export function MainComponent() {
           </a>
         </>
       ),
-      width: '200px',
+      width: '256px',
     },
   ]
 

@@ -50,4 +50,7 @@ a {
     body {
         font-size: 13px;
     }
+    .child {
+        font-size: 13px;
+    }
 }

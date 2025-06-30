@@ -47,10 +47,8 @@ a {
 }
 
 @media (max-width: 600px) {
-    body {
-        font-size: 13px;
-    }
-    .child {
-        font-size: 13px;
+    html, body, .wrapper, .container, .child, * {
+        font-size: 13px !important;
+        box-sizing: border-box;
     }
 }

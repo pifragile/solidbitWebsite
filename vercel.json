@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/tezos-nodes",
+      "destination": "https://keen-bonbon-e300a8.netlify.app"
+    }
+  ]
+}
